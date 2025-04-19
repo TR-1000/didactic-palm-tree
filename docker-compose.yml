@@ -1,0 +1,12 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+  airflow:
+    image: apache/airflow:2.7.0
+  metabase:
+    image: metabase/metabase

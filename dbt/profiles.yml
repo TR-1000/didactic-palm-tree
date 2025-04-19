@@ -1,0 +1,11 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: dbt_user
+      password: dbt_password
+      dbname: bwdb
+      schema: public
+      threads: 1
