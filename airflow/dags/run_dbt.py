@@ -2,12 +2,14 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 from datetime import datetime
 
-with DAG('run_dbt',
-         start_date=datetime(2024, 1, 1),
-         schedule_interval='@daily',
-         catchup=False) as dag:
+default_args = {
+    'owner': 'airflow',
+    'start_date': datetime(2024, 1, 1),
+}
 
+with DAG('run_dbt_project', default_args=default_args, schedule_interval=None, catchup=False) as dag:
     dbt_run = BashOperator(
         task_id='dbt_run',
-        bash_command='cd /opt/dbt && dbt run'
+        bash_command='cd /usr/app/bw_project && dbt run',
+        docker_url='bw_dbt',
     )

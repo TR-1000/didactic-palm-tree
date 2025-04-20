@@ -1,11 +1,11 @@
-default:
+bw_project:
   target: dev
   outputs:
     dev:
       type: postgres
-      host: localhost
-      user: dbt_user
-      password: dbt_password
-      dbname: bwdb
+      host: postgres
+      user: bw_user
+      password: bw_pass
+      port: 5432
+      dbname: bw_lab
       schema: public
-      threads: 1
