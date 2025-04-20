@@ -8,4 +8,4 @@ bw_project:
       password: bw_pass
       port: 5432
       dbname: bw_lab
-      schema: public
+      schema: lab
