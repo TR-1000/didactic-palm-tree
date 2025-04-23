@@ -1,4 +1,4 @@
-# 🆓 Suggested Open-Source Alternatives to SAP BW/4HANA
+# 🆓 Open-Source Alternatives to SAP BW/4HANA
 
 If you're building a personal lab for SAP data engineering on your own hardware, here's an open-source stack that mimics SAP BW/4HANA capabilities.
 
