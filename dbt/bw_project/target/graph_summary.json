@@ -1,0 +1,1 @@
+{"_invocation_id": "34e89b00-5bb4-4bcb-8244-3ff2d8e5f9a9", "linked": {"0": {"name": "model.bw_project.stg_customers", "type": "model", "succ": [3]}, "1": {"name": "model.bw_project.stg_products", "type": "model", "succ": [3]}, "2": {"name": "model.bw_project.stg_sales", "type": "model", "succ": [3]}, "3": {"name": "model.bw_project.rpt_sales_summary", "type": "model"}}}
