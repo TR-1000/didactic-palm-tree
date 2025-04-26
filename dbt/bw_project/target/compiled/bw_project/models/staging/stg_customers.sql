@@ -1,1 +1,0 @@
-SELECT customer_id, name, region FROM raw.customers

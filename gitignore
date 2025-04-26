@@ -1,8 +1,8 @@
 # --- DBT ---
-dbt/target/
-dbt/dbt_modules/
-dbt/user.yaml
-dbt/*.dbt
+*/target/
+*/dbt_modules/
+*/user.yaml
+*/*.dbt
 
 # --- Airflow ---
 airflow/logs/
