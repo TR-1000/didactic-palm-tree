@@ -1,1 +1,1 @@
-SELECT customer_id, name, region FROM public.customers;
+SELECT customer_id, name, region FROM public.customers
