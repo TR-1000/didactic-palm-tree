@@ -1,4 +1,4 @@
-## 📘 **User Story: Track and Report Daily Sales Performance**
+## 📘 **User Story US001: Track and Report Daily Sales Performance**
 
 ### **Role:**  
 As a **Business Analyst**
