@@ -51,8 +51,9 @@ services:
     image: ghcr.io/dbt-labs/dbt-postgres:1.7.5
     container_name: bw_dbt
     volumes:
-      - ./dbt:/usr/app
-    working_dir: /usr/app
+      - ./dbt/bw_project:/usr/app/bw_project
+      - ./dbt/.dbt:/root/.dbt
+    working_dir: /usr/app/bw_project
     depends_on:
       - postgres
     entrypoint: ["tail", "-f", "/dev/null"]  # Keeps the container running for exec
