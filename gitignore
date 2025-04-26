@@ -1,0 +1,32 @@
+# --- DBT ---
+dbt/target/
+dbt/dbt_modules/
+dbt/user.yaml
+dbt/*.dbt
+
+# --- Airflow ---
+airflow/logs/
+airflow/__pycache__/
+airflow/dags/__pycache__/
+
+# --- Python / Docker ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.log
+*.pid
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+
+# --- Jupyter Notebooks checkpoints (if you use them later) ---
+.ipynb_checkpoints/
+
+# --- VSCode settings (optional) ---
+.vscode/
+
+# --- Env files (optional security) ---
+.env
