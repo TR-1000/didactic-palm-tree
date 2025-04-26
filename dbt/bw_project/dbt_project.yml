@@ -6,4 +6,9 @@ profile: 'bw_project'
 
 models:
   bw_project:
-    +materialized: view
+    staging:
+      +schema: staging
+      +materialized: view
+    reporting:
+      +schema: reporting
+      +materialized: view
